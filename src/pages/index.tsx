@@ -1,3 +1,4 @@
+import Testimonials from "@/components/about/testimonials";
 import HomeAbout from "@/components/home/about";
 import Carsoule from "@/components/home/carsoule";
 import Rooms from "@/components/home/rooms";
@@ -14,6 +15,7 @@ const Home = () => {
         <HomeAbout />
         <Rooms />
         <Services />
+        <Testimonials />
       </div>
     </>
   );

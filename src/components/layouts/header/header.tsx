@@ -96,7 +96,7 @@ export default function Header() {
         ))}
       </div>
       <div className={`innerSticky transition-all duration-300 ${isSticky ? 'fixed top-0 z-50 w-full' : ''}`}>
-        <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center pl-5 bg-white mx-2 md:mx-10 rounded-sm">
+        <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 md:gap-10 items-center pl-5 bg-white mx-2 md:mx-10 rounded-sm shadow-lg">
           <div className="flex items-center justify-around col-span-1 md:col-span-1">
             <img src="./assets/logo.png" alt="logo" width={100} height={10} />
             <span className="border-l-2 h-10 hidden md:block ml-4"></span>

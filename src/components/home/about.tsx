@@ -32,32 +32,30 @@ export default function HomeAbout() {
         <Button variant="normal" size="medium" label="Read More"></Button>
       </div>
       <div className="col-span-1 relative">
-        <div className="hidden md:block absolute top-10 -right-4 rounded-md before:content-[''] before:absolute before:left-[-10px] before:right-[-10px] before:top-[-10px] before:bottom-[-10px] before:border-dotted before:border-[1px] before:border-[#ccc] before:z-10 before:rounded-md shadow-lg">
+        {/* <div className="hidden md:block absolute top-10 -right-4 rounded-md before:content-[''] before:absolute before:left-[-10px] before:right-[-10px] before:top-[-10px] before:bottom-[-10px] before:border-dotted before:border-[1px] before:border-[#ccc] before:z-10 before:rounded-md shadow-lg">
           <img
             src="/assets/images/img_9.jpeg"
             alt=""
             width={200}
             height={400}
-            className="relative shadow-lg shadow-[0px 30px 64px 0px rgba(0,0,0,.4)] rounded-md z-20"
+            className="relative shadow-lg shadow-[0px 30px 64px 0px rgba(0,0,0,.4)] rounded-md z-10"
           />
           <div className="absolute inset-0 bg-[#272535] opacity-50"></div>
-        </div>
+        </div> */}
         <img
           src="/assets/images/img_12.jpeg"
           alt=""
           className="relative w-full h-auto rounded-2xl before:contents before:absolute before:inset-0 before:bg-[#272535] before:opacity-50"
         />
-
-        {/* <span className="before:absolute before:left-10 before:-bottom-10 before:h-40 bg-[#f9f9f9] before:border-[1px] border-[#eee] rounded-md before:w-full before:z-[-10px]"></span> */}
-        <div className="hidden md:block absolute bottom-8 md:-left-5 lg:-left-28 rounded-md before:content-[''] before:absolute before:left-[-10px] before:right-[-10px] before:top-[-10px] before:bottom-[-10px] before:border-dotted before:border-[1px] before:border-[#ccc] before:z-10 before:rounded-md">
+        {/* <div className="hidden md:block absolute bottom-8 md:-left-5 lg:-left-28 rounded-md before:content-[''] before:absolute before:left-[-10px] before:right-[-10px] before:top-[-10px] before:bottom-[-10px] before:border-dotted before:border-[1px] before:border-[#ccc] before:z-10 before:rounded-md">
           <img
             src="/assets/images/img_6.jpeg"
             alt=""
             width={200}
             height={200}
-            className="relative shadow-lg shadow-[0px 30px 64px 0px rgba(0,0,0,.4)] rounded-md z-20"
+            className="relative shadow-lg shadow-[0px 30px 64px 0px rgba(0,0,0,.4)] rounded-md "
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
