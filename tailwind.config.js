@@ -21,6 +21,7 @@ module.exports = {
      },
      backgroundImage: {
       'about': "url('/assets/images/img_6.jpeg')",
+      'room': "url('/assets/images/img_10.jpeg')",
     },
      fontFamily: {
       'Playfair': ['"Playfair Display"', 'serif'],

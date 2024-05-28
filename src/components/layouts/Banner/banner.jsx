@@ -14,7 +14,13 @@ export default function Banner() {
       title: "About The HomeStay",
       home: "Home",
     },
-    // Add more pages as needed
+    {
+      className: "bg-room bg-cover bg-center bg-no-repeat h-[560px]",
+      page: "Rooms",
+      title: "Rooms And Suites",
+      home: "Home",
+    },
+    
   ];
 
   const currentPageValue = values.find(

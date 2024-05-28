@@ -119,12 +119,14 @@ export default function Header() {
           </div>
           <div className="flex items-center justify-end col-span-1 md:col-span-1 mx-10">
             <span className="border-l-2 h-10 hidden md:block mr-4"></span>
+           <Link href="rooms">
             <Button
               label="Search Room"
               variant="normal"
               size="medium"
               className="hidden lg:block"
             />
+            </Link>
           </div>
         </div>
        {/* Mobile menu */}

@@ -26,7 +26,7 @@ export default function Rooms() {
   ];
   return (
     <div className="bg-secondary">
-      <div className="grid grid-cols-1 lg:grid-cols-4 mx-1 md:mx-5 lg:mx-10 p-5">
+      <div className="grid grid-cols-1 lg:grid-cols-4 mx-1 md:mx-5 lg:mx-10 p-5 items-center">
         <div className="text-center ">
           <span className="border-t-2 border-primary h-1 w-12 block my-5 mx-auto"></span>
           <h5 className="text-primary text-xl">Special selection</h5>

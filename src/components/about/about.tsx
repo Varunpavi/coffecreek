@@ -6,7 +6,7 @@ export default function HomeAbout() {
       <div className="col-span-1">
         <span className="border-t-2 h-[1px] w-10 border-primary block my-5"></span>
         <h4 className="text-primary italic text-lg">Enjoy your time in our HomeStay</h4>
-        <h2 className="text-3xl md:text-5xl my-5 leading-normal">About Our HomeStay</h2>
+        <h2 className="text-3xl md:text-4xl my-5 leading-normal">About Our HomeStay</h2>
         <p>
           Qed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium totam aperiam. Eaque ipsa quae ab
@@ -35,7 +35,7 @@ export default function HomeAbout() {
           alt=""
           className="w-full h-auto rounded-2xl"
         />
-         <div className="absolute inset-0 bg-[#272535] opacity-40 rounded-2xl"></div>
+         <div className="absolute inset-0 bg-[#272535] opacity-20 rounded-2xl"></div>
       </div>
     </div>
   );
