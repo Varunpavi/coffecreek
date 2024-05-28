@@ -43,6 +43,10 @@ export default function Header() {
       name: "Rooms",
       pathname: "/rooms",
     },
+    {
+      name: "Contact",
+      pathname: "/contact",
+    },
   ];
 
   const social = [

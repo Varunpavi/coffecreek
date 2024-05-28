@@ -20,6 +20,12 @@ export default function Banner() {
       title: "Rooms And Suites",
       home: "Home",
     },
+    {
+      className: "bg-room bg-cover bg-center bg-no-repeat h-[560px]",
+      page: "Contact",
+      title: "Our Contacts",
+      home: "Home",
+    },
     
   ];
 
@@ -31,7 +37,7 @@ export default function Banner() {
     <div className="relative">
       <div className={currentPageValue?.className}>
         <div className="absolute inset-0 bg-[#272535] opacity-60"></div>   
-        <div className="absolute top-1/2 lg:top-1/2 mx-auto lg:left-1/4 lg:right-96 text-center">
+        <div className="absolute top-1/2 lg:top-1/2 mx-auto md:left-32 lg:left-1/4 lg:right-96 text-center">
         <span className="w-10 h-[1px] bg-primary mx-auto block mb-5"></span>
           <span className="italic text-primary text-xl my-5">Enjoy your time in our Hotel with pleasure.</span>
           <h5 className="text-4xl md:text-6xl my-5 text-white leading-normal">{currentPageValue?.title}</h5>
