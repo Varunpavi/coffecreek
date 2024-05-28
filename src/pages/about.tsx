@@ -5,7 +5,7 @@ import Banner from "@/components/layouts/Banner/banner";
 import Aboutpage from "@/components/about/about";
 import Counter from "@/components/about/counter";
 import Testimonials from "@/components/about/testimonials";
-export default function About() {
+const About = () => {
   return (
     <>
       <Meta title={"About - "} />
@@ -18,4 +18,5 @@ export default function About() {
     </>
   );
 }
+export default About;
 About.getLayout = getLayout;
