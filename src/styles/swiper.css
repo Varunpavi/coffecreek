@@ -1,0 +1,108 @@
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  z-index: 120;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  cursor: pointer;
+  line-height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 6px rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease-in-out;
+  font-size: 1.3em;
+  font-weight: bold;
+  background: #272535;
+  color: var(--primary-color);
+}
+
+.swiper-button-next::before,
+.swiper-button-prev::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -90px;
+  width: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: -3;
+  transition: all 0.5s ease-in-out;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.2);
+}
+
+.swiper-pagination {
+    bottom: 20px;
+    position: absolute;
+    z-index: 1;
+    left: 44%;
+}
+
+.swiper-button-next {
+    right: 20px;
+  }
+  .swiper-button-prev {
+    left: 20px;
+  }
+  
+.swiper-pagination-bullet {
+    opacity: 1;
+    background: #ccc;
+    margin: 0 10px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: relative;
+    border-radius: 100%;
+    transition: all 300ms ease-out;
+    cursor: pointer;
+}
+.swiper-pagination-bullet:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color);
+    transition: all 300ms ease-out;
+    transform: scale(0);
+}
+.swiper-pagination-bullet-active {
+    background: var(--primary-color);
+}
+.swiper-pagination-bullet-active:before {
+    transform: scale(1.0);
+}
+
+.swiper-button-prev svg,
+.swiper-button-next svg{
+    fill: var(--primary-color);
+    width: 15px;
+    height: 15px;
+}
+
+.swiper-button-prev:hover svg,
+.swiper-button-next:hover svg{
+    fill: #ffff;
+}
+
+@media screen and (max-width: 400px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 80% !important;
+    width: 40px;
+    height: 40px;
+  }
+}

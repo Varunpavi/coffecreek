@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./animation.css";
+@import "./swiper.css";
+
+:root {
+    --primary-color: #6fb72f;
+    --secondary-color: #272535;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {
+    font-family: "jost", sans-serif;
+    background-color: #ffff;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Playfair Display", serif;
+  color: #323246;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  color: #5e646a;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--primary-color);
+  }
+
+  .scroll-to-top {
+    /* background-color: var(--primary-color) !important;
+    border-radius: 50px !important;
+    padding: 5px;
+    z-index: 10; */
+    color: var(--primary-color) !important;
+    position: relative;
+    border-radius: 50% !important;
+  }
+
+  .scroll-to-top:after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 1;
+    z-index: -1;
+    background: -webkit-radial-gradient(
+      center,
+      ellipse,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0) 80%
+    );
+    background: -webkit-radial-gradient(
+      center ellipse,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0) 80%
+    );
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0) 80%
+    );
+  }
+
+  .scroll-to-top::before {
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50% !important;
+    background: transparent;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+    content: "";
+    -webkit-box-shadow: 0 0 0 0 var(--secondary-color);
+    box-shadow: 0 0 0 0 var(--secondary-color);
+    -webkit-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .scroll-to-top:hover {
+    color: #ffffff;
+    background-color: var(--secondary-color) !important;
+    border-color: var(--secondary-color) !important;
+  }
+  @media screen and (max-width: 380px) {
+    .scroll-to-top {
+      bottom: 10px !important;
+      right: 10px !important;
+    }
+  }
+  
+  .scroll-to-top svg {
+    fill: var(--primary-color) !important;
+    height: 15px;
+    margin: auto;
+    font-weight: bolder;
+  }
+
